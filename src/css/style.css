@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Applying font to whole page */
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+}

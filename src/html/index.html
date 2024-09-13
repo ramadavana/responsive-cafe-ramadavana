@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <!-- Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body class="bg-[#1E201E]">
+
+    <!-- Navigation -->
+    <nav class="flex justify-between bg-[#1E201E] items-center">
+
+        <!-- Navigation Logo -->
+        <div class="px-10 py-4">
+            <img src="../assets/logo/lemillion-light.png" alt="LeMillion"
+                class="w-48 transition-all duration-300 cursor-pointer">
+        </div>
+
+        <!-- Navigation Menu lg-2xl -->
+        <div class="hidden p-4 text-center lg:inline-flex xl:inline-flex 2xl:inline-flex">
+            <ul class="flex gap-12">
+                <li class="transition-all duration-300 hover:font-bold hover:scale-125">
+                    <a href="#" class="text-xl italic text-[#ECDFCC]">
+                        Home
+                    </a>
+                </li>
+                <li class="transition-all duration-300 hover:font-bold hover:scale-125">
+                    <a href="#menu" class="text-xl italic text-[#ECDFCC]">
+                        Menu
+                    </a>
+                </li>
+                <li class="transition-all duration-300 hover:font-bold hover:scale-125">
+                    <a href="#contact" class="text-xl italic text-[#ECDFCC]">
+                        Contact
+                    </a>
+                </li>
+                <li class="transition-all duration-300 hover:font-bold hover:scale-125">
+                    <a href="#about" class="text-xl italic text-[#ECDFCC]">
+                        About
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- User Control lg-2xl -->
+        <div class="hidden px-10 py-4 text-center lg:inline-flex xl:inline-flex 2xl:inline-flex">
+            <ul class="flex gap-8">
+                <li>
+                    <button
+                        class="italic text-[#ECDFCC] border border-[#ECDFCC] rounded-md text-base px-3 py-1 hover:font-bold hover:bg-[#ECDFCC] hover:text-[#1E201E] hover:scale-110 hover:shadow-lg transition-all duration-300">
+                        Login
+                    </button>
+                </li>
+                <li>
+                    <button
+                        class="italic text-[#ECDFCC] border border-[#ECDFCC] rounded-md text-base px-3 py-1 hover:font-bold hover:bg-[#ECDFCC] hover:text-[#1E201E] hover:scale-110 hover:shadow-lg transition-all duration-300">
+                        Register
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Dropdown (Mobile) -->
+        <div class="items-center p-4 lg:hidden xl:hidden 2xl:hidden">
+            <div class="group">
+                <img src="../assets/icon/menu-dropdown.png" alt="Dropdown"
+                    class="w-16 transition-all duration-500 hover:-rotate-90">
+                <div
+                    class="absolute z-most-front right-8 bg-[#ECDFCC] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+                    <!-- Dropdown Menu (Mobile) -->
+                    <div>
+                        <a href="#"
+                            class="italic block py-4 px-8 hover:font-bold hover:bg-[#3C3D37] text-[#1E201E] hover:text-[#ECDFCC] bg-[#ECDFCC] transition-all duration-300">
+                            Home
+                        </a>
+                        <a href="#menu"
+                            class="italic block py-4 px-8 hover:font-bold hover:bg-[#3C3D37] text-[#1E201E] hover:text-[#ECDFCC] bg-[#ECDFCC] transition-all duration-300">
+                            Menu
+                        </a>
+                        <a href="#contact"
+                            class="italic block py-4 px-8 hover:font-bold hover:bg-[#3C3D37] text-[#1E201E] hover:text-[#ECDFCC] bg-[#ECDFCC] transition-all duration-300">
+                            Contact
+                        </a>
+                        <a href="#about"
+                            class="italic block py-4 px-8 hover:font-bold hover:bg-[#3C3D37] text-[#1E201E] hover:text-[#ECDFCC] bg-[#ECDFCC] transition-all duration-300">
+                            About
+                        </a>
+                        <a href="#"
+                            class="italic block py-4 px-8 hover:font-bold hover:bg-[#3C3D37] text-[#1E201E] hover:text-[#ECDFCC] bg-[#ECDFCC] transition-all duration-300">
+                            Login
+                        </a>
+                        <a href="#"
+                            class="italic block py-4 px-8 hover:font-bold hover:bg-[#3C3D37] text-[#1E201E] hover:text-[#ECDFCC] bg-[#ECDFCC] transition-all duration-300">
+                            Register
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Hero -->
+    <header>
+        <div class="relative w-full m-0">
+            <img class="object-cover w-full h-[650px] filter brightness-[30%]" src="../assets/image/hero-1.webp"
+                alt="Hero Image">
+            <a href="#"
+                class="absolute inset-0 flex flex-col items-center justify-center gap-8 lg:gap-0 xl:gap-0 2xl:gap-0">
+                <img src="../assets/logo/lemillion-light.png" alt="LeMillion"
+                    class="w-3/4 transition-all duration-500 blur-3xl hover:blur-0">
+                <h1 class="text-3xl text-center text-[#ECDFCC] hover:font-bold transition-all duration-500">
+                    Millions of Dishes,<br>
+                    Millions of Flavor.
+                </h1>
+            </a>
+        </div>
+    </header>
+
+    <main class="bg-[#1E201E]">
+
+        <!-- Menu -->
+        <section id="menu">
+            <div
+                class="flex flex-col items-center align-top p-8 m-8 border-[#3C3D37] rounded-lg md:px-16 md:m-16 border-2 gap-8 lg:gap-8 lg:p-8 lg:m-32">
+                <div class="text-[#ECDFCC] text-3xl">
+                    Our Menu
+                </div>
+
+                <!-- Menu Card -->
+                <div class="grid items-center grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:mx-16">
+
+                    <!-- Menu Card 1: Content -->
+                    <div
+                        class="hover:shadow-[0_0_20px_0_#ECDFCC] hover:scale-110 transition-all duration-300 w-full flex flex-col items-center bg-[#3C3D37] p-8 rounded-lg border-none gap-4 text-[#ECDFCC]">
+                        <img src="../assets/menu/menu1.webp" alt="Menu 1" class="object-cover size-full">
+                        <div class="flex flex-col gap-4 item-center">
+                            <p class="text-base lg:text-lg font-semibold text-[#ECDFCC] text-center w-full">
+                                Chicken Sauce Salad
+                            </p>
+                            <p class="text-xs lg:text-sm text-center text-[#ECDFCC]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, atque.
+                            </p>
+                            <p class="text-xs text-center text-[#ECDFCC] italic">
+                                Rp40.000,00
+                            </p>
+                        </div>
+                        <button
+                            class="text-[#3C3D37] font-bold border-4 border-[#ECDFCC] w-full py-2 hover:text-[#ECDFCC] hover:bg-[#697565] transition-all duration-300 rounded-lg bg-[#ECDFCC]">
+                            ORDER
+                        </button>
+                    </div>
+
+                    <!-- Menu Card 2: Content -->
+                    <div
+                        class="hover:shadow-[0_0_20px_0_#ECDFCC] hover:scale-110 transition-all duration-300 w-full flex flex-col items-center bg-[#3C3D37] p-8 rounded-lg border-none gap-4 text-[#ECDFCC]">
+                        <img src="../assets/menu/menu2.webp" alt="Menu 2" class="object-cover size-full">
+                        <div class="flex flex-col gap-4 item-center">
+                            <p class="text-base lg:text-lg font-semibold text-[#ECDFCC] text-center w-full">
+                                Baked Beef Piccata
+                            </p>
+                            <p class="text-xs lg:text-sm text-center text-[#ECDFCC]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, atque.
+                            </p>
+                            <p class="text-xs text-center text-[#ECDFCC] italic">
+                                Rp70.000,00
+                            </p>
+                        </div>
+                        <button
+                            class="text-[#3C3D37] font-bold border-4 border-[#ECDFCC] w-full py-2 hover:text-[#ECDFCC] hover:bg-[#697565] transition-all duration-300 rounded-lg bg-[#ECDFCC]">
+                            ORDER
+                        </button>
+                    </div>
+
+                    <!-- Menu Card 3: Content -->
+                    <div
+                        class="hover:shadow-[0_0_20px_0_#ECDFCC] hover:scale-110 transition-all duration-300 w-full flex flex-col items-center bg-[#3C3D37] p-8 rounded-lg border-none gap-4 text-[#ECDFCC]">
+                        <img src="../assets/menu/menu3.webp" alt="Menu 3" class="object-cover size-full">
+                        <div class="flex flex-col gap-4 item-center">
+                            <p class="text-base lg:text-lg font-semibold text-[#ECDFCC] text-center w-full">
+                                Salmon Piccata
+                            </p>
+                            <p class="text-xs lg:text-sm text-center text-[#ECDFCC]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, atque.
+                            </p>
+                            <p class="text-xs text-center text-[#ECDFCC] italic">
+                                Rp50.000,00
+                            </p>
+                        </div>
+                        <button
+                            class="text-[#3C3D37] font-bold border-4 border-[#ECDFCC] w-full py-2 hover:text-[#ECDFCC] hover:bg-[#697565] transition-all duration-300 rounded-lg bg-[#ECDFCC]">
+                            ORDER
+                        </button>
+                    </div>
+
+                    <!-- Menu Card 4: Content -->
+                    <div
+                        class="hover:shadow-[0_0_20px_0_#ECDFCC] hover:scale-110 transition-all duration-300 w-full flex flex-col items-center bg-[#3C3D37] p-8 rounded-lg border-none gap-4 text-[#ECDFCC]">
+                        <img src="../assets/menu/menu4.webp" alt="Menu 4" class="object-cover size-full">
+                        <div class="flex flex-col gap-4 item-center">
+                            <p class="text-base lg:text-lg font-semibold text-[#ECDFCC] text-center w-full">
+                                Garlic Butter Salmon
+                            </p>
+                            <p class="text-xs lg:text-sm text-center text-[#ECDFCC]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, atque.
+                            </p>
+                            <p class="text-xs text-center text-[#ECDFCC] italic">
+                                Rp50.000,00
+                            </p>
+                        </div>
+                        <button
+                            class="text-[#3C3D37] font-bold border-4 border-[#ECDFCC] w-full py-2 hover:text-[#ECDFCC] hover:bg-[#697565] transition-all duration-300 rounded-lg bg-[#ECDFCC]">
+                            ORDER
+                        </button>
+                    </div>
+
+                    <!-- Menu Card 5: Content -->
+                    <div
+                        class="hover:shadow-[0_0_20px_0_#ECDFCC] hover:scale-110 transition-all duration-300 w-full flex flex-col items-center bg-[#3C3D37] p-8 rounded-lg border-none gap-4 text-[#ECDFCC]">
+                        <img src="../assets/menu/menu5.webp" alt="Menu 5" class="object-cover size-full">
+                        <div class="flex flex-col gap-4 item-center">
+                            <p class="text-base lg:text-lg font-semibold text-[#ECDFCC] text-center w-full">
+                                Surf &amp; Turf Classic
+                            </p>
+                            <p class="text-xs lg:text-sm text-center text-[#ECDFCC]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, atque.
+                            </p>
+                            <p class="text-xs text-center text-[#ECDFCC] italic">
+                                Rp65.000,00
+                            </p>
+                        </div>
+                        <button
+                            class="text-[#3C3D37] font-bold border-4 border-[#ECDFCC] w-full py-2 hover:text-[#ECDFCC] hover:bg-[#697565] transition-all duration-300 rounded-lg bg-[#ECDFCC]">
+                            ORDER
+                        </button>
+                    </div>
+
+                    <!-- Menu Card 6: Content -->
+                    <div
+                        class="hover:shadow-[0_0_20px_0_#ECDFCC] hover:scale-110 transition-all duration-300 w-full flex flex-col items-center bg-[#3C3D37] p-8 rounded-lg border-none gap-4 text-[#ECDFCC]">
+                        <img src="../assets/menu/menu6.webp" alt="Menu 6" class="object-cover size-full">
+                        <div class="flex flex-col gap-4 item-center">
+                            <p class="text-base lg:text-lg font-semibold text-[#ECDFCC] text-center w-full">
+                                Pork Tenderloin
+                            </p>
+                            <p class="text-xs lg:text-sm text-center text-[#ECDFCC]">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, atque.
+                            </p>
+                            <p class="text-xs text-center text-[#ECDFCC] italic">
+                                Rp70.000,00
+                            </p>
+                        </div>
+                        <button
+                            class="text-[#3C3D37] font-bold border-4 border-[#ECDFCC] w-full py-2 hover:text-[#ECDFCC] hover:bg-[#697565] transition-all duration-300 rounded-lg bg-[#ECDFCC]">
+                            ORDER
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="flex items-center justify-center w-full p-4 text-center align-middle">
+                    <a href="#"
+                        class="font-bold hover:text-[#ECDFCC] hover:bg-[#3C3D37] text-[#3C3D37] rounded-full py-2 px-4 bg-[#ECDFCC] border-2 transition-all duration-300">
+                        View More
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="flex flex-col items-center p-8 lg:m-32 lg:p-48 md:p-16 m-8 border-[#3C3D37] rounded-lg border-2 gap-4"
+                style="background-image: url('../assets/image/order-bg.webp'); background-size: cover;">
+                <div class="flex flex-col items-center w-full lg:px-32 md:p-16 p-8 bg-[#3C3D37] rounded-lg gap-4">
+                    <div class=" text-[#ECDFCC] text-3xl">
+                        Contact Us
+                    </div>
+                    <div class="text-[#ECDFCC] italic text-center lg:pb-8">
+                        Please fill out the form below.
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="flex flex-col w-full gap-4">
+
+                        <div class="flex flex-col gap-1">
+                            <label for="name" class="text-[#ECDFCC] text-xs uppercase tracking-widest">
+                                Name
+                            </label>
+                            <input type="text" name="name" id="name"
+                                class="w-full border-2 border-[#ECDFCC] bg-[#3C3D37] p-2 rounded-lg text-[#ECDFCC] mb-4">
+
+                            <label for="email" class="text-[#ECDFCC] text-xs uppercase tracking-widest">
+                                Email
+                            </label>
+                            <input type="text" name="email" id="email"
+                                class="w-full border-2 border-[#ECDFCC] bg-[#3C3D37] p-2 rounded-lg text-[#ECDFCC] mb-4">
+
+                            <label for="phone" class="text-[#ECDFCC] text-xs uppercase tracking-widest">
+                                Phone
+                            </label>
+                            <input type="number" name="phone" id="phone"
+                                class="w-full border-2 border-[#ECDFCC] bg-[#3C3D37] p-2 rounded-lg text-[#ECDFCC] mb-4">
+
+                            <label for="message" class="text-[#ECDFCC] text-xs uppercase tracking-widest">
+                                Your Message
+                            </label>
+                            <textarea name="message" id="message"
+                                class="w-full border-2 border-[#ECDFCC] bg-[#3C3D37] p-2 rounded-lg text-[#ECDFCC] mb-4">
+                            </textarea>
+                        </div>
+
+                    </form>
+
+                    <button
+                        class="text-[#3C3D37] border-4 border-[#ECDFCC] w-full py-2 hover:font-bold hover:text-[#ECDFCC] hover:bg-[#697565] transition-all duration-300 rounded-lg bg-[#ECDFCC]">
+                        SEND
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about"
+            class="m-8 rounded-lg flex flex-col gap-8 border-2 border-[#3C3D37] p-8 items-center align-middle lg:m-32 lg:p-16 md:p-16">
+            <p class="text-[#ECDFCC] text-3xl text-center">
+                What's Inside Our Kitchen
+            </p>
+
+            <!-- About Container -->
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+
+                <!-- About Card 1 -->
+                <div
+                    class="hover:scale-110 transition-all duration-300 rounded-lg hover:shadow-[0_0_20px_0_#ECDFCC] flex flex-col items-center w-full gap-4 p-4 lg:w-full">
+                    <img src="../assets/image/about1.webp" alt="About 1"
+                        class="object-cover rounded-full aspect-square lg:w-3/4">
+                    <p class="p-4 text-center text-[#ECDFCC]">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iusto error exercitationem nisi
+                        natus commodi deleniti veritatis earum quisquam ad.
+                    </p>
+                </div>
+
+                <!-- About Card 2 -->
+                <div
+                    class="hover:scale-110 transition-all duration-300 rounded-lg hover:shadow-[0_0_20px_0_#ECDFCC] flex flex-col items-center w-full gap-4 p-4 lg:w-full">
+                    <img src="../assets/image/about2.webp" alt="About 2"
+                        class="object-cover rounded-full aspect-square lg:w-3/4">
+                    <p class="p-4 text-center text-[#ECDFCC]">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iusto error exercitationem nisi
+                        natus commodi deleniti veritatis earum quisquam ad.
+                    </p>
+                </div>
+
+                <!-- About Card 3 -->
+                <div
+                    class="hover:scale-110 transition-all duration-300 rounded-lg hover:shadow-[0_0_20px_0_#ECDFCC] flex flex-col items-center w-full gap-4 p-4 md:col-span-2 md:w-1/2 lg:col-span-1 lg:w-full">
+                    <img src="../assets/image/about3.webp" alt="About 3"
+                        class="object-cover rounded-full aspect-square lg:w-3/4">
+                    <p class="p-4 text-center text-[#ECDFCC]">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iusto error exercitationem nisi
+                        natus commodi deleniti veritatis earum quisquam ad.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#3C3D37] flex flex-col gap-4 p-8 justify-center">
+
+        <!-- Footer Logo sm-md -->
+        <div class="grid grid-cols-1 p-4 justify-items-center lg:hidden">
+            <img src="../assets/logo/lemillion-light.png" alt="Footer Logo" class="md:w-1/2">
+            <p class="text-[#ECDFCC]">Millions of Dishes,<br>
+                Millions of Flavor.
+            </p>
+        </div>
+
+        <!-- Footer Menu -->
+        <div class="grid grid-cols-2 gap-4 p-4 pb-16 lg:grid-cols-3 md:pb-12 lg:pl-32 justify-items-center">
+
+            <!-- Footer Logo lg -->
+            <div class="hidden grid-cols-1 p-4 justify-items-center lg:grid">
+                <img src="../assets/logo/lemillion-light.png" alt="Footer Logo" class="md:w-1/2 lg:w-full">
+                <p class="text-[#ECDFCC]">Millions of Dishes,<br>
+                    Millions of Flavor.
+                </p>
+            </div>
+
+            <!-- Navigations -->
+            <div class="flex flex-col gap-4">
+                <p class="text-[#ECDFCC] font-bold">
+                    Navigations
+                </p>
+                <ul class="grid gap-4">
+                    <li>
+                        <a href="#" class="text-[#ECDFCC] transition-all duration-300 hover:font-bold hover:scale-110">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#menu"
+                            class="text-[#ECDFCC] transition-all duration-300 hover:font-bold hover:scale-110">
+                            Menu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact"
+                            class="text-[#ECDFCC] transition-all duration-300 hover:font-bold hover:scale-110">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="text-[#ECDFCC] transition-all duration-300 hover:font-bold hover:scale-110">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Socials -->
+            <div class="flex flex-col gap-4">
+                <p class="text-[#ECDFCC] font-bold">
+                    Other Contacts
+                </p>
+                <ul class="grid grid-cols-3 gap-4 md:w-1/2">
+                    <li>
+                        <a href="#">
+                            <img src="../assets/icon/facebook-96.png" alt="Facebook"
+                                class="transition-all duration-300 hover:scale-110 filter hover:brightness-50">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/icon/instagram-96.png" alt="Instagram"
+                                class="transition-all duration-300 hover:scale-110 filter hover:brightness-50">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/icon/whatsapp-96.png" alt="Whatsapp"
+                                class="transition-all duration-300 hover:scale-110 filter hover:brightness-50">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/icon/twitter-96.png" alt="Twitter"
+                                class="transition-all duration-300 hover:scale-110 filter hover:brightness-50">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/icon/tiktok-96.png" alt="TikTok"
+                                class="transition-all duration-300 hover:scale-110 filter hover:brightness-50">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="w-full text-[#ECDFCC]">
+            <p class="text-center">
+                Copyright &copy; 2024 Dibimbing - Rama Davana. All Rights Reserved.
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
